@@ -1,0 +1,271 @@
+.product-line {
+    margin-bottom: 50px;
+}
+.tab-content{
+    padding-top: 50px;
+}
+
+.product-line__title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.product-line__title__wrp{
+    .more,
+    a{
+        margin-top: 4px;
+        display: inline-block;
+    }
+}
+.product-line__item {
+    position: relative;
+    p {
+        margin-bottom: 0px;
+    }
+
+    .product-line__title {
+        text-align: center;
+    }
+    .stock {
+        width: 60px;
+        float: left;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        .stock__title {
+            font-size: 14px;
+            color: $color-red;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .stock__discount {
+            width: 37px;
+            height: 37px;
+            border: 1px solid $color-red;
+            color: $color-red;
+            font-weight: 200;
+            padding-top: 1px;
+            padding-left: 2px;
+            border-radius: 50%;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-align-content: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 15px;
+        }
+    }
+    .vendor_code {
+        background: #edeeef;
+        color: #333333;
+        padding: 2px 6px;
+        border-radius: 8px;
+        display: inline-block;
+        margin: 10px auto;
+        display: block;
+        max-width: 150px;
+        text-align: center;
+    }
+    .price_block {
+        text-align: center;
+        position: relative;
+        margin: 11px;
+        .price_old {
+            position: absolute;
+            line-height: 28px;
+            text-decoration: line-through;
+        }
+        .prace_new {
+            font-size: 24px;
+            color: $color-red;
+            font-weight: 400;
+            padding-left: 30px;
+            span {
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+    }
+    .review {
+        a{
+            font-size: 12px;
+            color: $color-p;
+            font-weight: 300;
+        }
+    }
+}
+
+.product-line__item__logo {
+    float: right;
+}
+
+.product-line__img {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+.product-line__item__action-block {
+    margin-bottom: 10px;
+    display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+      align-content: stretch;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    .like {
+        width: 37px;
+        height: 37px;
+        border: 1px solid $color-red;
+        color: $color-red;
+        font-weight: 200;
+        float: left;
+        text-decoration: none;
+        border-radius: 50%;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 15px;
+    }
+    .btn-to-cart {}
+
+}
+
+.jq-number__field{
+	width: 40px;
+	box-shadow: none;
+	border-radius: 8px 0px 0px 8px;
+	border-right: 0px;
+	input{
+		text-align: center;
+		padding-right: 3px;
+		font-size: 14px;
+
+	}
+	text-align: center;
+}
+.jq-number{
+	padding: 0 23px 0 0;
+	max-width: 60px;
+}
+.jq-number__spin{
+	width: 23px;
+	background:none;
+	border-radius: 0px;
+	height: 18px;
+	border-left: 0px;
+	box-shadow: none !important;
+	&:hover{
+		background:none;
+	}
+	&.minus{
+		border-top: 0px;
+		border-radius: 0px 0px 8px 0px;
+		&:after{
+			top: 4px;
+		}
+	}
+	&.plus{
+		border-radius: 0px 8px 0px 0px;
+		border-bottom: 0px;
+		&:after{
+			top: 6px;
+		}
+	}
+	&:after{
+		left: 5px;
+	}
+}
+
+.product-line__tabs__wrp{
+    width: 100%;
+    background: #f7f7f7;
+    .product-line__title__wrp{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        p{
+            margin: 0px;
+        }
+    }   
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+    background: #fff;
+    border: 1px solid blue;
+    border-radius: 0px;
+}
+.popular,.news,.sale{
+    display: none;
+}

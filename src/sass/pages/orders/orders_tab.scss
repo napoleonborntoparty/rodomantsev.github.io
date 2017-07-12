@@ -1,0 +1,104 @@
+.orders_page {
+
+}
+
+.orders_tab {
+  margin-bottom: 100px;
+  .row_items {
+    margin-bottom: 25px;
+  }
+  /deep/ {
+    .panel-default {
+      border-color: transparent;
+      margin-bottom: 25px;
+    }
+    .panel-heading {
+      background: #fff;
+      border-radius: 4px;
+      border: 1px solid #003399;
+      -webkit-box-shadow: 0px 2px 5px 0px rgba(186, 186, 186, 1);
+      -moz-box-shadow: 0px 2px 5px 0px rgba(186, 186, 186, 1);
+      box-shadow: 0px 2px 5px 0px rgba(186, 186, 186, 1);
+      .status_canceled{
+        color: red;
+      }
+      .status_done{
+        color: #003399;
+      }
+    }
+    .panel-body {
+      border-top-color: transparent;
+    }
+  }
+  .panel-title {
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+      text-decoration: none;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+      align-content: stretch;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    .order_item_number {
+      b {
+        font-size: 18px;
+        font-size: 18px;
+      }
+      font-size: 14px;
+    }
+    .order_item_status {
+      font-size: 14px;
+      text-transform: uppercase;
+      &.status_done {
+
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        img {
+          display: inline-block;
+          margin-top: -14px;
+          margin-left: 10px;
+        }
+      }
+
+    }
+    .order_item_items {
+      font-size: 14px;
+    }
+    .order_item_more {
+      font-size: 12px;
+    }
+  }
+
+}

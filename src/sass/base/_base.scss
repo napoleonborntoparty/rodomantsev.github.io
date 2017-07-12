@@ -1,0 +1,16 @@
+//===============================
+//
+// BASE CORE STYLE
+//
+//===============================
+
+@import 'colors';
+@import 'fonts';
+@import 'mixins';
+@import 'helpclass';
+
+.btn{
+	background: $color-yellow;
+	font-weight: 300;
+	color: $color-main;
+}

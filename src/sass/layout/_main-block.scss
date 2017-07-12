@@ -1,0 +1,88 @@
+// .main-block
+.main-block {
+    margin-top: 10px;
+    .swiper-slide {
+        img {
+            max-width: 100%;
+        }
+    }
+    .right-block{
+        a{
+            display: inline-block;
+            margin-bottom: 15px;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+// .main-block
+// .categories-items
+.categories-items {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-top: 30px;
+
+    .categories-item {
+        width: 17%;
+        text-align: center;
+        text-transform: uppercase;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 30px;
+        font-size: 13px;
+        color: #333333;
+        text-decoration: none;
+        img {
+            margin-bottom: 10px;
+            display: block;
+        }
+        &:hover {
+            &> .categories-img {
+                display: none;
+            }
+            &> .categories-img-hover {
+                display: block;
+            }
+        }
+        .categories-img {}
+        .categories-img-hover {
+            display: none;
+        }
+    }
+}
+
+// .categories-items

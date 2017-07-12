@@ -1,0 +1,38 @@
+.cart-table-wrp{
+  table{
+    width: 100%;
+    tr{
+      &:first-child{
+        td{
+          padding: 15px 0px;
+        }
+
+      }
+      &:nth-child(odd){
+
+        background: #e5e5e5;
+      }
+      &:last-child{
+        td{
+          border-bottom: 0px;
+        }
+
+      }
+    }
+    td{
+      padding: 10px 0px;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      &:last-child{
+        border-right: 0px;
+      }
+    }
+  }
+
+}
+.box{
+    background: #f5f5f5;
+    padding: 25px 100px; 
+    border-radius: 3px;
+  }

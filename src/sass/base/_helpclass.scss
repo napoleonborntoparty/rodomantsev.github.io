@@ -1,0 +1,84 @@
+//============================
+//		Text aligin
+//============================
+
+// breackpoint
+$breakpoint: (
+	1: none,
+	2: 768px,
+	3: 992px,
+	4: 1200px
+);
+
+// prefix setting
+$prefix: (
+	1: xs,
+	2: sm,
+	3: md,
+	4: lg
+);
+
+// class name
+$class-name: (
+	1: center,
+	2: left,
+	3: right,
+	4: justify
+);
+
+// style generation
+@for $i from 1 through 4 {
+	@if map-get($breakpoint, $i) == none {
+		@for $j from 1 through 4 {
+			.txt-#{map-get($prefix, $i)}-#{map-get($class-name, $j)} {
+				text-align: #{map-get($class-name, $j)}
+			}
+		}
+	} @else {
+		@media screen and(min-width: #{map-get($breakpoint, $i)}) {
+			@for $j from 1 through 4 {
+				.txt-#{map-get($prefix, $i)}-#{map-get($class-name, $j)} {
+					text-align: #{map-get($class-name, $j)}
+				}
+			}
+		}
+	}
+}
+
+.clearfix{
+	clear: both;
+}
+.flex-btw-center{
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.google-maps {
+	position: relative;
+	padding-bottom: 35%; // This is the aspect ratio
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 70px;
+}
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}

@@ -1,0 +1,49 @@
+.paginator{
+  margin-bottom: 50px;
+  margin-top: 15px;
+  ul{
+    padding: 0px;
+    text-align: center;
+    li{
+      display: inline-block;
+      &:first-child{
+        border: 1px solid $color-main;
+        border-radius: 4px;
+        transition: .3s;
+        a{
+          text-decoration: none;
+        }
+        &:hover{
+          a{
+            color: #fff;
+          }
+          background: $color-main;
+        }
+      }
+      &:last-child{
+        border: 1px solid $color-main;
+        border-radius: 4px;
+        transition: .3s;
+        text-decoration: none;
+        &:hover{
+          a{
+            color: #fff;
+          }
+          background: $color-main;
+        }
+        a{
+          text-decoration: none;
+        }
+      }
+      a{
+        transition: .3s;
+        font-size: 20px;
+        padding: 20px;
+        font-weight: 400;
+        &:hover{
+          
+        }
+      }
+    }
+  }
+}

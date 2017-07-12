@@ -1,0 +1,111 @@
+/*****************************
+*------- Media 992px --------*
+*****************************/
+
+@media (max-width: 991px) {
+    .top-nav {
+        display: none;
+    }
+    .top-info {
+        display: none;
+    }
+    .mob-menu {
+        display: block;
+        padding: 10px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .75);
+        button {
+            background: none;
+            border: none;
+        }
+        ul {}
+        .catalog {
+            // display: none;
+            button {
+                background: none;
+                border: none;
+                position: absolute;
+                top: 15px;
+                left: 50px;
+                text-transform: uppercase;
+            }
+            .catalog-inner {
+                position: absolute;
+                background: #fff;
+                max-width: 320px;
+                left: 0px;
+                top: 50px;
+                z-index: 111;
+                border: 1px solid #ccc;
+                display: none;
+                &.active {
+                    display: block;
+                }
+                ul {
+                    padding: 10px;
+                    li {
+                        list-style: none;
+                        a {
+                            padding: 10px 0px;
+                            width: 100%;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        .menu-inner {
+            position: absolute;
+            background: #fff;
+            max-width: 320px;
+            left: 0px;
+            top: 50px;
+            z-index: 111;
+            border: 1px solid #ccc;
+            display: none;
+            &.active {
+                display: block;
+            }
+            ul {
+                padding: 10px;
+                li {
+                    list-style: none;
+                    a {
+                        padding: 10px 0px;
+                        width: 100%;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    .search-icon {
+        width: 38px;
+        height: 38px;
+        background: url('../images/system/searth-icon.png');
+        background-repeat: no-repeat;
+        position: absolute;
+		top: 19px;
+		right: 32px;
+        cursor: pointer;
+    }
+    .cart-icon {
+        width: 38px;
+        height: 38px;
+        background: url('../images/system/icon-2.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    .product-line__tabs{
+        display: none;
+    }
+    .popular,.news,.sale{
+        display: block;
+    }
+    .right-block{
+        display: none;
+    }
+}
+

@@ -1,0 +1,30 @@
+/*****************************
+*------- Media 767px --------*
+*****************************/
+
+@media (max-width: 767px) {
+    .categories-items .categories-item {
+        width: 36%;
+    }
+    .product-line__title{
+    	margin-bottom: 0px;
+    }
+    .product-line__title__wrp{
+    	margin-bottom: 40px;
+    }
+  .our_advantages_item{
+    a span{
+      margin-top:10px ;
+      margin-bottom: 20px;
+    }
+  }
+  .contact-items{
+    .col-sm-8,
+    .col-sm-4{
+      text-align: center;
+      img{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+.catalog-page{
+  .product_content{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .product-line__item{
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    position: relative;
+    z-index: 0;
+    &:hover{
+      z-index:9;
+      //padding: 10px;
+      .hover-block{
+        display: block;
+      }
+      transform: scale(1.05);
+      transform-origin: center;
+      &:after{
+        content: ' ';
+        position: absolute;
+        top: -10px;
+        width: calc(100% + 20px);
+        left: -10px;
+        height: calc(100% + 220px);
+        border-radius: 3px;
+        background: #fff;
+        z-index: -1;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+      }
+    }
+  }
+}
+.content{
+  .catalog-title{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .product-line__item{
+    margin-bottom:60px;
+  }
+  .display-wrp{
+
+  }
+}
+.hover-block{
+  display: none;
+  position: absolute;
+  z-index:22222;
+  margin-top:15px;
+  .color-wrp-title{
+    float: left;
+  }
+  .color-wrp{
+    float: right;
+    width: 60%;
+    $red: #DB2828;
+    $orange: #F2711C;
+    $yellow: #FBBD08;
+    $olive: #B5CC18;
+    $green: #21BA45;
+    $teal: #00B5AD;
+    $blue: #2185D0;
+    $violet: #6435C9;
+    $purple: #A333C8;
+    $pink: #E03997;
+
+    input[type="radio"] {
+      display: none !important;
+      &:checked + label {
+        border: 1px solid #f1f1f1;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+      }
+    }
+
+    label {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      padding: 1px;
+      border-radius: 4px;
+      cursor: pointer;
+      span {
+        border-radius: 4px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        &.red {
+          background: $red;
+        }
+        &.green {
+          background: $green;
+        }
+        &.orange {
+          background: $orange;
+        }
+        &.purple {
+          background: $purple;
+        }
+        &.pink {
+          background: $pink;
+        }
+        &.yellow {
+          background: $yellow;
+        }
+        &.violet {
+          background: $violet;
+        }
+        &.teal {
+          background: $teal;
+        }
+        &.olive {
+          background: $olive;
+        }
+      }
+    }
+  }
+  .status{
+    margin-top: 10px;
+    padding: 4px 10px;
+    background: #f0f0f0;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    max-width: 60%;
+    border-radius: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .delivery{
+    text-align: center;
+    color: red;
+    font-size: 11px;
+    margin-top:5px;
+  }
+
+}
+
+.load-more{
+  clear: both;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  img{
+    margin: 20px;
+  }
+  p{
+    font-size: 20px;
+    text-align: center;
+    font-weight:500;
+    text-transform: uppercase;
+    color: $color-main;
+    margin-top: 10px;
+  }
+}

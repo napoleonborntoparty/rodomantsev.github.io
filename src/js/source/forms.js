@@ -1,0 +1,1 @@
+$('.product-line__item input[type="number"]').styler();
