@@ -1,21 +1,29 @@
 <div class="col-sm-3">
     <div class="catalog-filter">
         <div class="gray">
+            <p class="filter-title"> <span class="icon"><img src="images/system/yes-icon.png" alt=""></span>ВЫБРАНО</p>
+
             <a href="#" class="fiter-select-item">Economix </a>
             <a href="#" class="fiter-select-item">Economix </a>
             <a href="#" class="fiter-select-item">Economix </a>
         </div>
         <div class="gray">
+            <p class="filter-title"> <span class="icon"><img src="images/system/filter-icon.png" alt=""></span>ФИЛЬТР ХАРАКТЕРИСТИК</p>
+            <p><b>Цена</b></p>
             <div class="manufacturer">
                 <p>
                     <input type="text" id="minCost" value="0"/>
+                    <span>&nbsp;&nbsp; - &nbsp;&nbsp;</span>
                     <input type="text" id="maxCost" value="1000"/>
+                    <span> &nbsp;грн</span>
                     <span class="clearfix"></span>
                 </p>
+                <p><span class="pull-left">100грн</span><span class="pull-right">5000.00грн</span></p>
+
+                <span class="clearfix" style="margin-top: 1px;"></span>
 
                 <div id="slider-range"></div>
-
-                <p class="title"><b>Производитель </b></p>
+                <p class="title"><b>Производитель </b> <span class="pull-right toggle-btn"></span></p>
                 <label><input type="checkbox" value="1">Economix <span>(20)</span></label>
                 <label><input type="checkbox" value="1">Optima <span>(10)</span></label>
                 <label><input type="checkbox" value="1">Schneider <span>(7)</span></label>
@@ -44,5 +52,9 @@
             </div>
         </div>
     </div>
-    <img src="http://placehold.it/270x440" alt="" style="max-width: 100%;">
+    <div class="responsive-img">
+        <a href="#">
+            <img src="images/b.png" alt="" >
+        </a>
+    </div>
 </div>

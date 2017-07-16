@@ -1,6 +1,12 @@
 
 <div class="container">
     <h1 class="main-title uppercase">Корзина</h1>
+
+    <div class="custom-btn-wrp">
+        <button class="custom-btn"><span class="icon"><img src="images/system/printer.png" alt="">&nbsp;&nbsp;Распечатать</span></button>
+        <button class="custom-btn"><span class="icon"><img src="images/system/download.png" alt="">&nbsp;&nbsp;Скачать</span></button>
+    </div>
+
     <div class="cart-table-wrp">
         <table>
             <tr>
@@ -14,7 +20,7 @@
                 <td>Наличие</td>
             </tr>
             <tr>
-                <td><input type="checkbox"> <img src="http://placehold.it/30x30" alt=""></td>
+                <td><input type="checkbox"> <img src="images/cart-tovar.png" alt=""></td>
                 <td>Доска мобильная</td>
                 <td>CRM4912_P3DIY_E</td>
                 <td>1000.00</td>
@@ -24,7 +30,7 @@
                 <td>В наличие</td>
             </tr>
             <tr>
-                <td><input type="checkbox"> <img src="http://placehold.it/30x30" alt=""></td>
+                <td><input type="checkbox"> <img src="images/cart-tovar.png" alt=""></td>
                 <td>Доска мобильная</td>
                 <td>CRM4912_P3DIY_E</td>
                 <td>1000.00</td>
@@ -34,7 +40,7 @@
                 <td>В наличие</td>
             </tr>
             <tr>
-                <td><input type="checkbox"> <img src="http://placehold.it/30x30" alt=""></td>
+                <td><input type="checkbox"> <img src="images/cart-tovar.png" alt=""></td>
                 <td>Доска мобильная</td>
                 <td>CRM4912_P3DIY_E</td>
                 <td>1000.00</td>
@@ -44,7 +50,7 @@
                 <td>В наличие</td>
             </tr>
             <tr>
-                <td><input type="checkbox"> <img src="http://placehold.it/30x30" alt=""></td>
+                <td><input type="checkbox"> <img src="images/cart-tovar.png" alt=""></td>
                 <td>Доска мобильная</td>
                 <td>CRM4912_P3DIY_E</td>
                 <td>1000.00</td>
@@ -56,27 +62,27 @@
         </table>
         <div class="row" style="margin-top: 30px;">
             <div class="col-sm-6">
-                <p >Срок поставки: <span>3-4 дня</span></p> 
+                <p> <b>Срок поставки: <span class="red">3-4 дня</span></b></p>
                 <p>(в корзине присутствует товар под заказ)</p>
             </div>
             <div class="col-sm-6">
-                <p class="text-right">Сумма скидки: 100. 00 грн</p>
+                <p class="text-right">Сумма скидки: <span class="red">100. 00 грн</span></p>
                 <p class="text-right">Доставка согласно тарифов перевозчика Новая почта</p>
-                <p class="text-right"><b>Итого к оплате (включая НДС):</b> 3600.00 грн.</p>
+                <p class="text-right"><b>Итого к оплате (включая НДС): <span class="red price">3600.00 грн.</span></b></p>
             </div>
         </div>
         
-        <div class="box">
+        <div class="box" style="margin-top: 30px;">
             <div class="col-sm-6">
                 <p>Быстрое добавление товара в корзину по артикулу</p>
-                    <input type="text">
-                    <input type="submit" value="Добавить">
+                    <input type="text" class="input-add-tovar">
+                    <input type="submit" value="Добавить" class="btn">
                 <p><a href="#" download="/">Скачать</a> каталог товаров (PDF,~56MB)</p>
             </div>
             <div class="col-sm-6">
                 <p>Множественное добавление товаров в корзину из файла</p>
-                    <input type="text">
-                    <input type="submit" value="Добавить">
+                <button class="btn-add-tovar">ВЫБРАТЬ ФАЙЛ</button>
+                <input type="submit" value="Добавить" class="btn">
                 <p><a href="#" download="/">Скачать</a> пример файла (CSV)</p>
             </div>
             <div class="clearfix"></div>
@@ -112,7 +118,7 @@
                     <input type="text" placeholder="№ этажа" class="pull-right">
                     <div class="clearfix"></div>
                 </div>
-                <input type="submit" value="Оформить заказ">
+                <input type="submit" value="Оформить заказ" class="btn uppercase">
             </form>
         </div>
     </div>

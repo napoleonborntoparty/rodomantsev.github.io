@@ -1,3 +1,13 @@
+.filter-title{
+  padding-left: 20px;
+  position: relative;
+  font-size:14px;
+  text-transform: uppercase;
+  .icon{
+    position: absolute;
+    left:0px;
+  }
+}
 .catalog-filter{
   .fiter-select-item{
     background: #fff;
@@ -37,12 +47,34 @@
       p{
         input{
           width: 70px;
-          float: left;
-          margin-right: 20px;
+          border: 1px solid #ccc;
+          border-radius: 2px;
+          padding: 2px 4px;
+          //float: left;
+          //margin-right: 20px;
         }
       }
       #slider-range{
-        margin: 30px 0px;
+        margin: 10px 0 30px 0;
+      }
+      .toggle-btn{
+        padding: 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        background: #ccc;
+        position: relative;
+        cursor: pointer;
+        &:after{
+          content: ' ';
+          width: 6px;
+          height:1px;
+          background: #000;
+          position: absolute;
+          top: 50%;
+          left:50%;
+          margin-left: - 3px;
+        }
       }
       label{
         width: 100%;

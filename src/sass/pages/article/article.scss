@@ -1,3 +1,16 @@
 .article-page{
-  padding: 40px 0px;
+  .left-nav-block{
+    width: calc(100% - 5px);
+    margin-bottom:20px;
+  }
+  margin-bottom:40px;
+  .bread_crumbs{
+    margin-top: 0px;
+  }
+  .article-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  padding: 15px 0px;
 }

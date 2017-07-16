@@ -29,6 +29,9 @@
 }
 .categories-item{
   margin-bottom: 50px;
+  >span{
+    color: $color-main;
+  }
   .categories-item-img{
     margin-bottom: 20px;
     text-align: center;
@@ -57,9 +60,9 @@
     }
   }
   span{
-    color: $color-main;
-    font-size: 18px;
-    line-height: 1.1;
+    //color: $color-main;
+    //font-size: 18px;
+    //line-height: 1.1;
   }
   ul{
     padding: 0px;

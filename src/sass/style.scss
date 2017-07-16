@@ -22,6 +22,7 @@
 @import 'modules/paginator';
 @import 'modules/star';
 @import 'modules/countdown.scss';
+@import 'modules/seo-block';
 
 // LAYOUT IMPORT
 //==========================
@@ -54,6 +55,9 @@
 @import 'pages/view';
 @import 'pages/comments/comment';
 @import 'pages/orders/orders_tab';
+@import 'pages/news-page/news-page';
+@import 'pages/pay_deliver/pay_deliver';
+@import 'pages/preposition/content';
 
 // VENDORS IMPORT
 //==========================

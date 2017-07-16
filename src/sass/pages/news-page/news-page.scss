@@ -1,0 +1,25 @@
+.news-page{
+  margin-bottom: 40px;
+  .left-nav-block{
+    margin-bottom:15px;
+  }
+  .news-list{
+    padding-left: 0px;
+    li{
+      list-style: none;
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+  .news_item-title{
+    position: relative;
+    padding-right: 80px;
+    .news-date{
+      position: absolute;
+      right:0px;
+    }
+  }
+}

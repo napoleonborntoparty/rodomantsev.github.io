@@ -72,13 +72,15 @@
             <li><a href="./cart.html">cart.html</a></li>
             <li><a href="./catalog.html">catalog.html</a></li>
             <li><a href="./categories.html">categories.html</a></li>
-            <li><a href=".comments.html">comments.html</a></li>
+            <li><a href="./comments.html">comments.html</a></li>
             <li><a href="./contacts.html">contacts.html</a></li>
             <li><a href="./featured.html">featured.html</a></li>
             <li><a href="./help.html">help.html</a></li>
             <li><a href="./orders.html">orders.html</a></li>
+            <li><a href="./news-page.html">news-page.html</a></li>
             <li><a href="./pay_deliver.html">pay_deliver.html</a></li>
             <li><a href="./index.html">index.html</a></li>
+            <li><a href="./preposition.html">preposition.html</a></li>
         </ul>
     </div>
     <div class="top-nav">
@@ -128,9 +130,12 @@
                 <div class="flex-btw-center">
                     <div class="col-xs-12 col-md-5 col-lg-3">
                         <div class="top-logo-block">
-                            <div class="logo">
-                                <img src="images/system/logo-papirus.png" alt="">
-                            </div>
+                            <a href="/">
+                                <div class="logo">
+                                    <img src="images/system/logo-papirus.png" alt="">
+                                </div>
+                            </a>
+    
                             <div class="top-logo-info">
                                 <p>Интернет-магазин</p>
                                 <p>Все для офiсу</p>
@@ -176,7 +181,7 @@
             <div class="clearfix"></div>
             <div class="row">
                 <div class="col-xs-12 col-md-3">
-                    <div class="catalog ">
+                    <div class="catalog active">
                     <!--<div class="catalog active">-->
                         <button class="catalog-btn"><i>Каталог</i> <span></span></button>
                         <ul>
@@ -465,21 +470,29 @@
             <div class="col-sm-3">
                 <div class="catalog-filter">
                     <div class="gray">
+                        <p class="filter-title"> <span class="icon"><img src="images/system/yes-icon.png" alt=""></span>ВЫБРАНО</p>
+            
                         <a href="#" class="fiter-select-item">Economix </a>
                         <a href="#" class="fiter-select-item">Economix </a>
                         <a href="#" class="fiter-select-item">Economix </a>
                     </div>
                     <div class="gray">
+                        <p class="filter-title"> <span class="icon"><img src="images/system/filter-icon.png" alt=""></span>ФИЛЬТР ХАРАКТЕРИСТИК</p>
+                        <p><b>Цена</b></p>
                         <div class="manufacturer">
                             <p>
                                 <input type="text" id="minCost" value="0"/>
+                                <span>&nbsp;&nbsp; - &nbsp;&nbsp;</span>
                                 <input type="text" id="maxCost" value="1000"/>
+                                <span> &nbsp;грн</span>
                                 <span class="clearfix"></span>
                             </p>
+                            <p><span class="pull-left">100грн</span><span class="pull-right">5000.00грн</span></p>
+            
+                            <span class="clearfix" style="margin-top: 1px;"></span>
             
                             <div id="slider-range"></div>
-            
-                            <p class="title"><b>Производитель </b></p>
+                            <p class="title"><b>Производитель </b> <span class="pull-right toggle-btn"></span></p>
                             <label><input type="checkbox" value="1">Economix <span>(20)</span></label>
                             <label><input type="checkbox" value="1">Optima <span>(10)</span></label>
                             <label><input type="checkbox" value="1">Schneider <span>(7)</span></label>
@@ -508,7 +521,11 @@
                         </div>
                     </div>
                 </div>
-                <img src="http://placehold.it/270x440" alt="" style="max-width: 100%;">
+                <div class="responsive-img">
+                    <a href="#">
+                        <img src="images/b.png" alt="" >
+                    </a>
+                </div>
             </div>
             <div class="content">
                 <div class="col-sm-9">
@@ -523,17 +540,17 @@
                         <div class="col-sm-6">
             
                             <div class="display-wrp pull-right">
-                                <p>Отображение</p>
+                                <!--<p>Отображение</p>-->
                                 <a href="#" class="grid"><i class="fa fa-th-large" aria-hidden="true"></i></a>
                                 <a href="#" class="list"><i class="fa fa-list" aria-hidden="true"></i></a>
                             </div>
-                            <select class="pull-right">
-                                <option value="#">1</option>
-                                <option value="#">2</option>
-                                <option value="#">3</option>
-                                <option value="#">4</option>
-                                <option value="#">5</option>
-                            </select>
+                            <!--<select class="pull-right">-->
+                                <!--<option value="#">1</option>-->
+                                <!--<option value="#">2</option>-->
+                                <!--<option value="#">3</option>-->
+                                <!--<option value="#">4</option>-->
+                                <!--<option value="#">5</option>-->
+                            <!--</select>-->
                         </div>
                     </div>
             
@@ -1322,7 +1339,7 @@
                     <p class="product-line__title">ВЫ СМОТРЕЛИ</p>
                 </div>
                 <div class="col-md-2">
-                    <a href="#">смотреть <span>></span></a>
+                    <a href="#" class="read_more">смотреть <span></span></a>
                 </div>
             </div>
             </div>
@@ -1626,6 +1643,7 @@
             <p>
                 Для обеспечения бесперебойной работы офиса необходим самый широкий ассортимент канцелярских товаров. На сайте интернет магазина "Папирус" можно подобрать канцтовары на любой вкус: офисная бумага, ручки, дыроколы, офисные стулья и многое другое. Интернет магазин канцтоваров предлагает вашему вниманию более 15 000 наименований основного товара.
             </p>
+            <p class="text-right"><a href="#" class="read_more"> читать дальше. <span></span></a></p>
         </div>
     </div>
 </main>

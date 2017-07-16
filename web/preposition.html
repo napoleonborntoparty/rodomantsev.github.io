@@ -72,13 +72,15 @@
             <li><a href="./cart.html">cart.html</a></li>
             <li><a href="./catalog.html">catalog.html</a></li>
             <li><a href="./categories.html">categories.html</a></li>
-            <li><a href=".comments.html">comments.html</a></li>
+            <li><a href="./comments.html">comments.html</a></li>
             <li><a href="./contacts.html">contacts.html</a></li>
             <li><a href="./featured.html">featured.html</a></li>
             <li><a href="./help.html">help.html</a></li>
             <li><a href="./orders.html">orders.html</a></li>
+            <li><a href="./news-page.html">news-page.html</a></li>
             <li><a href="./pay_deliver.html">pay_deliver.html</a></li>
             <li><a href="./index.html">index.html</a></li>
+            <li><a href="./preposition.html">preposition.html</a></li>
         </ul>
     </div>
     <div class="top-nav">
@@ -128,9 +130,12 @@
                 <div class="flex-btw-center">
                     <div class="col-xs-12 col-md-5 col-lg-3">
                         <div class="top-logo-block">
-                            <div class="logo">
-                                <img src="images/system/logo-papirus.png" alt="">
-                            </div>
+                            <a href="/">
+                                <div class="logo">
+                                    <img src="images/system/logo-papirus.png" alt="">
+                                </div>
+                            </a>
+    
                             <div class="top-logo-info">
                                 <p>Интернет-магазин</p>
                                 <p>Все для офiсу</p>
@@ -176,7 +181,7 @@
             <div class="clearfix"></div>
             <div class="row">
                 <div class="col-xs-12 col-md-3">
-                    <div class="catalog ">
+                    <div class="catalog active">
                     <!--<div class="catalog active">-->
                         <button class="catalog-btn"><i>Каталог</i> <span></span></button>
                         <ul>
@@ -473,6 +478,9 @@
                         <li><a href="#">Просмотренные</a></li>
                     </ul>
                 </div>
+                <div class="responsive-img">
+                    <img src="images/b.png" alt="">
+                </div>
             </div>
 
             <div class="content">
@@ -504,9 +512,15 @@
             
             
                     <div class="timer_wrp">
-                        <div id="clock" class="timer"></div>
-                    </div>
+                        <p class="timer-title pull-left">
+                            До окончания <br>
+                            предложения осталось
+                        </p>
             
+                        <div id="clock" class="timer"></div>
+                        <div class="clearfix"></div>
+            
+                    </div>
             
                     <script type="text/template" id="clock-template">
                         <div class="time <%= label %>">
@@ -1306,7 +1320,7 @@
                     <p class="product-line__title">ВЫ СМОТРЕЛИ</p>
                 </div>
                 <div class="col-md-2">
-                    <a href="#">смотреть <span>></span></a>
+                    <a href="#" class="read_more">смотреть <span></span></a>
                 </div>
             </div>
             </div>
@@ -1610,6 +1624,7 @@
             <p>
                 Для обеспечения бесперебойной работы офиса необходим самый широкий ассортимент канцелярских товаров. На сайте интернет магазина "Папирус" можно подобрать канцтовары на любой вкус: офисная бумага, ручки, дыроколы, офисные стулья и многое другое. Интернет магазин канцтоваров предлагает вашему вниманию более 15 000 наименований основного товара.
             </p>
+            <p class="text-right"><a href="#" class="read_more"> читать дальше. <span></span></a></p>
         </div>
     </div>
 </main>

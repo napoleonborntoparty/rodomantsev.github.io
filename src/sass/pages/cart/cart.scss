@@ -1,6 +1,38 @@
 .cart-page{
   padding: 0px 0px 40px 0px;
 }
+.custom-btn-wrp{
+	margin-bottom: 20px;
+}
+.custom-btn{
+	border: none;
+	background: none;
+	margin-right: 15px;
+	&:hover{
+		color: $color-main;
+	}
+}
+.red{
+	color: red;
+}
+.price{
+	font-size: 20px;
+}
+.input-add-tovar{
+	border: 1px solid #ccc;
+	padding: 6px 15px;
+	border-radius: 4px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+.btn-add-tovar{
+	background: #fff;
+	border: 1px solid #ccc;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	padding: 6px 15px;
+	border-radius: 4px;
+}
 .checkout{
 	input[type="text"],
 	textarea{
@@ -10,7 +42,7 @@
 		border-radius: 6px;
 		margin: 10px auto;
 		font-size: 14px;
-		padding: 5px;
+		padding: 5px 10px;
 		outline: none;
 		max-width: 470px;
 		display: block;
